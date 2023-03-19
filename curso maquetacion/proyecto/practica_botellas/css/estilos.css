@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #121867;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+}
+
+nav,.container,footer {
+  max-width: 1200px;
+  min-width: 576px;
+  margin:0px auto;
+}
+
+nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  max-width: 1200px;
+  min-width: 576px;
+  margin:0px auto;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1f0d82;
+  color: #d62275;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 5px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main{
+  overflow-y: auto;
+  margin: 0px auto;
+  width: 80%;
+  height: 300px;
+}
+main h3{
+  margin: 0px;
+}
+main h1{
+  text-align: center;
+  color: #1f0d82;
+}
+/*Esta propiedad no se por que no me funciona corrrectamente*/
+/* main :after, */
+ main h1::after {
+  background-color: rgb(243, 55, 132);
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 30%;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+.image img {
+  /*
+  Dar transaparencia*/
+  opacity: 0.5;
+  width: 1200px;
+  height: 576px;
+}
+aside {
+  background-color: #1f0d82;
+  width: 200px;
+  height: 110px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+}
+header {
+  position: relative;
+  text-align: center;
+}
+
+aside h3 {
+  color: #d62275;
+}
+
+aside a {
+  background-color: #d62275;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.card{
+  overflow-y: auto;
+}
+
+.cards .card {
+  float: left;
+  padding: 20px;
+  text-align: center;
+  width: 33%;
+  
+}
+.card img{
+  width: 50%;
+}
+
+
+.bottle div::first-letter {
+  color: #d62275;
+  font-size: 2em;
+  padding-right: 5px;
+  border-right: 1px solid #1f0d82;
+  border-bottom: 1px solid #1f0d82;
+  margin: 10px;
+}
+
+.bottle{
+  margin:auto;
+  margin-left: 250px;
+  width: 80%;
+  padding-top: 20px;
+  
+  
+  
+}
+
+.bottle img{
+  float: left;
+}
+.bottle div{
+  margin: 10px auto;
+  margin-top: 5px;
+  margin-top: 15px;
+  float: left;
+  width: 45%;
+}
+.gallery{
+  margin: 0px auto;
+  clear: both;
+  width: 80%;
+  padding-top: 20px;
+}
+.gallery img{
+  width: 18%;
+}
+footer{
+  overflow-y: auto;
+  background-color: #121867;
+  color: #d62275;
+  
+  padding: 20px;
+}
+address{
+float: left ;
+width: 200px;
+}
+address p{
+  margin: 0px;
+  
+}
+footer div{
+  float:left;
+  padding-left: 200px;
+  
+}
+.social{
+  padding-right: 50px;
+  float: right;
+}
+.social img{
+  
+  width: 30px;
+}

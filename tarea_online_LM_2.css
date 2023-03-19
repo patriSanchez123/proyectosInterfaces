@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  /*Esto sirve para que cuente el padding y el margin en el mismo tamaÃ±o de la caja*/
+  padding: 0;
+  /*los pongo en 0 para no tener problemas mas tarde a lo largo del codigo */
+  margin: 0;
+}
+
+@media all and (max-width:600px) {
+  nav a {
+    /*Media */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*No se poner la casita en la izquierda*/
+  }
+
+  main {
+    /*Media */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Media */
+  .articulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+body {
+  /*Cuerpo de la pagina*/
+  font-size: 0.8em;
+  background: linear-gradient(to bottom left, rgb(133, 169, 193), rgb(6, 133, 161));
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  /*Cabecera*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-color: rgba(255, 255, 255, 0.73);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+header h2 {
+  /*Tarea online*/
+  font-size: 1em;
+  font-weight: lighter;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+picture img {
+  /*imagen ordenador al ser picture se trata como en elemento en linea y con displey block lo convertimos en bloque*/
+  display: block;
+  width: 75px;
+}
+
+nav a {
+  /*Enlaces*/
+  font-size: 0.7em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+a img {
+  /*Imagen casa*/
+  width: 10px;
+  /*Pongo estos margenes por que no se mover el icono de otra manera por el nav de todas maneras no se si poner la imagen en el navegador nav es la mas correcta*/
+  margin-right: 5px;
+  margin-bottom: -1px;
+}
+
+main {
+  /*Centro de pagina*/
+  background: rgb(255, 255, 255);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.centro {
+  /*Parte izq del main*/
+  width: 50%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 80px;
+}
+
+.centro h2 {
+  margin-right: 33%;
+  /*AÃ±ado este margen por que el h2 se ponia en totalmete en la derecha de la caja y no sabia modificarlo para que fuera a la izq de otra manera*/
+}
+
+main picture {
+  display: block;
+  /*Para pasar picture a elemento de bloque*/
+  width: 50%;
+  /*Para ocupar la mitad del ancho de pagina del main*/
+}
+
+main picture img {
+  /*Imagen main*/
+  width: 250px;
+}
+
+section {
+  /*Ordenar y dar propiedades a la seccion entera*/
+  padding-bottom: 20px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-self: flex-end;
+}
+
+.introduccion {
+  /*Textos de la section*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.introduccion h2 {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.articulos {
+  /*Ordenar posicion de los articulos*/
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.articulos article {
+  /*Para dar propiedades a todos los articulos*/
+  margin-top: 15px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+.articulos img {
+  /*propiedades a la imagen de los ariculos*/
+  width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.articulos article h2 {
+  /*Textos subrayados con border bottom con style ridge*/
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-style: ridge;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-color: rgb(225, 225, 225);
+  color: white;
+  font-weight: lighter;
+}
+
+.articulos article p {
+  /*Para darle un poco de espacio entre los h2 y los parrafos*/
+  margin-top: 10px;
+}
+
+footer img {
+  /*Imagen del pie de pagina*/
+  width: 20px;
+}
+
+footer {
+  /*Propiedades del pie de pagina*/
+  background-color: rgb(13, 19, 96);
+  font-size: 0.7em;
+  color: white;
+  text-align: center;
+}
+
+.imagnesfooter a {
+  /*Iconos pie de pagina*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

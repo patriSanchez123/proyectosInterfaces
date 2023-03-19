@@ -1,0 +1,637 @@
+* {
+/*Dar estilo a todo el documento en comun*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*******************************************************************************************
+********************************************************************************************/
+body {
+    margin-top: 60px;
+    margin-left: 0.5%;
+}
+/*cabezera*/
+header {
+    text-align: center;
+    height: 75px;
+    background-color: #33CCCC;
+}
+/*Imagen cabezera**/
+header img {
+    padding-right: 5%;
+    float: right;
+    height: 150px;
+
+    position: relative;
+    top: -90px;
+    width: 150px;
+    height: 170px;
+    opacity: 0.3;
+}
+/*Titulo cabezera**/
+h1 {
+    padding-top: 12px;
+    padding-right: 50%;
+    font-size: 2em;
+}
+/*Menú**/
+#menu {
+    display: flex;
+    margin-left: 4.5%;
+
+
+}
+/**Botones de menú*/
+#menu li {
+    text-align: center;
+    padding: 3.5px;
+    width: 120px;
+    height: 25px;
+    border-top: 0.5px solid black;
+    border-right: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+/**Agrandar letra menú al pasar el cursor*/
+#menu li a:hover {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/**Cambiar de color de fondo a los botones del menú*/
+#menu li:hover {
+    background-color: #33CCCC;
+    width: 200px;
+}
+/**Quitar subrayado de los enlaces*/
+a {
+    text-decoration: none;
+    color: black;
+}
+/**Quitar los puntos de las listas*/
+li {
+    list-style: none;
+}
+/**Propiedades del navegador*/
+nav {
+
+    margin-top: 20px;
+    height: 100%;
+
+}
+/**Poner en columna los div del centro de la pagina*/
+#cuerpo {
+    display: flex;
+
+}
+/*Propiedades dek aside del index.html**/
+#asideIndex {
+    background-color: #33CCCC;
+    border: 0.5px solid black;
+    margin-left: 5%;
+    width: 15%;
+
+}
+/*Propiedades dek aside del fichaCliente.html**/
+#asideFichaCliente {
+    background-color: #33CCCC;
+    border-left: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    width: 15%;
+    margin-left: 5%;
+    height: 640px;
+}
+/*Navegacion lateral**/
+#navLeft {
+
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#navLeft li {
+    margin: 15px;
+}
+/**Dar propiedad al div de la tabla*/
+#tabla {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.5px solid black;
+    padding-top: 20px;
+
+
+}
+/*Estilo del td**/
+td {
+    margin-left: 50px;
+    padding: 5px;
+    width: 200px;
+}
+/*Estilo del tr**/
+tr {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+/**Imagen boton de la tabla*/
+#tabla img {
+    width: 20px;
+}
+/**Indicamos la primera columna de la tabla para cambiarle
+el color y el estilo*/
+tr:first-child {
+    font-weight: bold;
+    background-color: #33CCCC;
+}
+/*Al pasar por la columna que se cambie el color de fondo**/
+tr:hover {
+
+    background-color: #CFD8DC;
+}
+/*Al pasar por la fila que se cambie el color de fondo**/
+td:hover {
+
+    background-color: #CFD8DC;
+}
+/*Estilo del footer**/
+footer {
+    float: left;
+    padding-right: 20px;
+    width: 100%;
+    background-color: #33CCCC;
+    text-align: right;
+}
+/**Estilo del div del formulario de fichaCliente.html*/
+#formulario {
+    margin-bottom: 30px;
+    width: 80%;
+    text-align: center;
+    border: 0.5px solid black;
+    width: 450px;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+
+
+}
+/*Estilo del formulario**/
+form {
+    margin-left: 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*Estilo del label del formulario**/
+label {
+
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+/*Estilo del input**/
+input {
+    text-align: center;
+    height: 25px;
+}
+/*Div donde manejo la posición del label y el input**/
+.datos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/***************ESTILO AL CAMBIAR EL TAMAÑO DE LA PÁGINA A 890PX ************************************ 
+****************NO AÑADO COMENTARIOS YA QUE EL CÓDIGO SOLO CAMBIA DE ********************************
+****************TAMAÑO ALGUNAS PARTES DEL CÓDIGO PERO EL RESTO ES IGUAL******************************
+****************************************************************************************************/
+@media all and (max-width:890px) {
+
+    body {
+        margin-top: 60px;
+        margin-left: 0.5%;
+    }
+
+    header {
+        text-align: center;
+        height: 150px;
+        background-color: #33CCCC;
+    }
+
+    header img {
+        padding-right: 5%;
+        height: 20px;
+        position: relative;
+        top: -70px;
+        width: 150px;
+        height: 170px;
+        opacity: 0.3;
+    }
+
+    h1 {
+        padding-top: 12px;
+        padding-right: 50%;
+        font-size: 2em;
+    }
+
+    #menu {
+        display: flex;
+        margin-left: 4.5%;
+    }
+
+    #menu li {
+        text-align: center;
+        padding: 3.5px;
+        width: 120px;
+        height: 40px;
+        border-top: 0.5px solid black;
+        border-right: 0.5px solid black;
+        border-left: 0.5px solid black;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    #menu li a:hover {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #menu li:hover {
+        background-color: #33CCCC;
+        width: 200px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    nav {
+        margin-top: 20px;
+        height: 100%;
+
+    }
+
+    #cuerpo {
+        display: flex;
+
+    }
+
+    #asideIndex {
+        background-color: #33CCCC;
+        border: 0.5px solid black;
+        width: 35%;
+        margin-left: 5%;
+
+    }
+
+    #asideFichaCliente {
+
+        border-left: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        border-top: 0.5px solid black;
+        width: 35%;
+        margin-left: 5%;
+        height: 640px;
+    }
+
+    #navLeft {
+
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #navLeft li {
+        margin: 15px;
+    }
+
+    #tabla {
+        display: flex;
+        align-content: center;
+        border: 0.5px solid black;
+        padding-top: 20px;
+        padding-right: 30px;
+        width: 450px;
+
+    }
+
+    td {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 10px;
+        width: 7px;
+
+
+    }
+
+    tr {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 250px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #tabla img {
+        padding-left: 10px;
+        width: 15px;
+    }
+
+    tr:first-child {
+        font-weight: bold;
+        background-color: #33CCCC;
+    }
+
+    tr:hover {
+
+        background-color: #CFD8DC;
+    }
+
+    td:hover {
+
+        background-color: #CFD8DC;
+    }
+
+    footer {
+        float: left;
+        padding-right: 20px;
+        width: 100%;
+        background-color: #33CCCC;
+        text-align: right;
+    }
+
+    #formulario {
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        border: 0.5px solid black;
+        width: 450px;
+        height: 600px;
+        padding: 20px;
+        display: flex;
+        justify-items: center;
+
+
+    }
+
+    form {
+        margin-left: 2%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    label {
+
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        text-align: center;
+        height: 25px;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+}
+
+/***************ESTILO AL CAMBIAR EL TAMAÑO DE LA PÁGINA A 470PX************************************ 
+****************NO AÑADO COMENTARIOS YA QUE EL CÓDIGO SOLO CAMBIA DE ********************************
+****************TAMAÑO ALGUNAS PARTES DEL CÓDIGO PERO EL RESTO ES IGUAL******************************
+****************************************************************************************************/
+@media all and (max-width:470px) {
+    * {
+        font-size: 0.93em;
+    }
+
+    body {
+        margin-top: 60px;
+        margin-left: 0.5%;
+
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+        height: 150px;
+        background-color: #33CCCC;
+    }
+
+    header img {
+        padding-right: 5%;
+        height: 20px;
+        position: relative;
+        top: -100px;
+        width: 150px;
+        height: 170px;
+        opacity: 0.3;
+    }
+
+    h1 {
+
+        padding-top: 12px;
+        padding-right: 50%;
+        font-size: 2em;
+    }
+
+    #menu {
+        display: flex;
+        margin-left: 4.5%;
+
+
+    }
+
+    #menu li {
+        text-align: center;
+        padding: 3.5px;
+        width: 170px;
+        height: 30px;
+        border-top: 0.5px solid black;
+        border-right: 0.5px solid black;
+        border-left: 0.5px solid black;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+    }
+
+    #menu li a:hover {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    #menu li:hover {
+        background-color: #33CCCC;
+        width: 200px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    nav {
+
+        margin-top: 20px;
+        height: 100%;
+
+    }
+
+    #cuerpo {
+        display: flex;
+
+    }
+
+    #asideIndex {
+        background-color: #33CCCC;
+        border: 0.5px solid black;
+        margin-left: 5%;
+        width: 75%;
+
+    }
+
+    #asideFichaCliente {
+        background-color: #33CCCC;
+        border-left: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        border-top: 0.5px solid black;
+        width: 75%;
+        margin-left: 5%;
+        height: 640px;
+    }
+
+    #navLeft {
+
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #navLeft li {
+        margin: 15px;
+    }
+
+    #tabla {
+        display: flex;
+        width: 4000px;
+        align-content: center;
+        border: 0.5px solid black;
+        padding-top: 20px;
+
+
+    }
+
+    td {
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 0px;
+        width: 7px;
+
+
+    }
+
+    tr {
+        margin-bottom: 10px;
+        width: 250px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    #tabla img {
+        width: 15px;
+    }
+
+    tr:first-child {
+        font-weight: bold;
+        background-color: #33CCCC;
+    }
+
+    tr:hover {
+
+        background-color: #CFD8DC;
+    }
+
+    td:hover {
+
+        background-color: #CFD8DC;
+    }
+
+    footer {
+        float: left;
+        padding-right: 20px;
+        width: 100%;
+        background-color: #33CCCC;
+        text-align: right;
+    }
+
+    #formulario {
+        margin-bottom: 30px;
+        width: 80%;
+        text-align: center;
+        border: 0.5px solid black;
+        width: 450px;
+        height: 600px;
+        padding: 20px;
+        display: flex;
+        justify-items: center;
+
+
+    }
+
+
+    form {
+        margin-left: 2%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    label {
+
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        text-align: center;
+        height: 25px;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+
+}
